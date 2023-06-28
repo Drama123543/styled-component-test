@@ -1,0 +1,38 @@
+{
+  "name": "styled-component-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "webpack --watch --mode development --config ./webpack.config.js",
+    "build": "NODE_ENV=production webpack --mode production --config ./webpack.config.js",
+    "run": "nodemon --watch dist dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-styled-components": "^2.0.7",
+    "glob-to-regexp": "^0.4.1",
+    "html-webpack-plugin": "^4.5.2",
+    "nodemon": "^1.14.9",
+    "webpack": "^5.88.0",
+    "webpack-bundle-analyzer": "^4.9.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "core-js": "^3.26.0",
+    "joi": "^17.9.2",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6",
+    "yup": "^1.2.0"
+  }
+}
